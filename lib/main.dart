@@ -19,10 +19,8 @@ class MyApp extends StatelessWidget {
             children: [
               const Center(
                 child: CircleAvatar(
-                  radius: 50.0,
-                  backgroundImage: NetworkImage(
-                    'https://miro.medium.com/v2/resize:fill:96:96/1*ecbKNWhiCJqQYc9yN44FJA.png',
-                  ),
+                  radius: 100.0,
+                  backgroundImage: AssetImage("images/mohammad.jpg"),
                 ),
               ),
               const Text(
@@ -52,7 +50,8 @@ class MyApp extends StatelessWidget {
             Column(
               children: [
                 labelInfo(Icons.phone,"+1 (234) 56789"),
-                labelInfo(Icons.email, "mohammad@email.com")
+                labelInfo(Icons.email, "mohammad@email.com"),
+
               ],
             )
             ],
