@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mi_card/label.dart';
 
 void main() {
   return runApp(const MyApp());
@@ -42,59 +43,18 @@ class MyApp extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
                SizedBox(
-                height: 20,
-                width: MediaQuery.sizeOf(context).width* 0.7,
+                height: 5,
+                width: MediaQuery.sizeOf(context).width* 0.8,
                 child: Divider(
                   color: Colors.teal.shade100,
                 ),
               ),
-              Column(
-                children: [
-                  SizedBox(
-                    width: MediaQuery.sizeOf(context).width * 0.9,
-                    child: const Card(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 30,
-                      ),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            leading: Icon(
-                              Icons.phone,
-                              color: Colors.teal,
-                            ),
-                            title: Text("+964 7812496747",),
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    width: MediaQuery.sizeOf(context).width * 0.9,
-                    child: const Card(
-                      margin: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 30,
-                      ),
-                      child: Column(
-                        children: [
-                          ListTile(
-                            leading: Icon(
-                              Icons.email,
-                              color: Colors.teal,
-                            ),
-                            title: Text(
-                              "alalaqm1997@gmail.com",
-                            ),
-                          
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              )
+            Column(
+              children: [
+                labelInfo(Icons.phone,"+1 (234) 56789"),
+                labelInfo(Icons.email, "mohammad@email.com")
+              ],
+            )
             ],
           ),
         ),
